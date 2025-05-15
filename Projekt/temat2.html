@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="ciemny.js" defer></script>
+    <title>Rodzaje Pocisków Czołgowych</title>
+    <style>
+        .ammo-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .ammo-section h2 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+
+        .ammo-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .ammo-image, .ammo-stats {
+            flex: 1;
+            height: 300px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .ammo-image img, .ammo-stats img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 10px;
+        }
+
+        .ammo-stats {
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.svg" alt="Logo Strony">
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="temat1.html">Galeria</a></li>
+                <li><a href="temat2.html">Rodzaje Pocisków</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle">Przełącz tryb</button>
+    </header>
+    <main>
+        <h1>Rodzaje Pocisków Czołgowych</h1>
+        <p>Dowiedz się więcej o różnych typach pocisków używanych w czołgach.</p>
+
+        <!-- Sekcja dla pocisku 1 -->
+        <section class="ammo-section">
+            <h2>Pocisk AP (Armor Piercing)</h2>
+            <div class="ammo-content">
+                <div class="ammo-image">
+                    <img src="ap.jpg" alt="Pocisk AP">
+                </div>
+                <div class="ammo-stats">
+                    <img src="ap-shell.jpg" alt="Statystyki AP">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sekcja dla pocisku 2 -->
+        <section class="ammo-section">
+            <h2>Pocisk HE (High Explosive)</h2>
+            <div class="ammo-content">
+                <div class="ammo-image">
+                    <img src="he.jpg" alt="Pocisk HE">
+                </div>
+                <div class="ammo-stats">
+                    <img src="HE-shell.jpg" alt="Statystyki HE">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sekcja dla pocisku 3 -->
+        <section class="ammo-section">
+            <h2>Pocisk HEAT (High Explosive Anti-Tank)</h2>
+            <div class="ammo-content">
+                <div class="ammo-image">
+                    <img src="heat.jpg" alt="Pocisk HEAT">
+                </div>
+                <div class="ammo-stats">
+                    <img src="HEAT-shell.jpg" alt="Statystyki HEAT">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sekcja dla pocisku 4 -->
+        <section class="ammo-section">
+            <h2>Pocisk APFSDS (Armor Piercing Fin-Stabilized Discarding Sabot)</h2>
+            <div class="ammo-content">
+                <div class="ammo-image">
+                    <img src="apfsds.jpg" alt="Pocisk APFSDS">
+                </div>
+                <div class="ammo-stats">
+                    <img src="APFSDS-shell.jpg" alt="Statystyki APFSDS">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Strona o Czołgach. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+</html>

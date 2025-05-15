@@ -1,0 +1,164 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    background-color: #fff;
+    color: #4CAF50;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+main {
+    padding: 20px;
+}
+
+#quiz-container {
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+form button {
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+.correct {
+    color: green;
+    font-weight: bold;
+}
+
+.incorrect {
+    color: red;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+/* Styl dla logo w lewym górnym rogu */
+header {
+    position: relative; /* Ustawienie kontekstu dla pozycji absolutnej logo */
+    padding-left: 70px; /* Dodanie odstępu, aby logo nie nachodziło na tekst */
+}
+
+header img {
+    width: 50px; /* Szerokość logo */
+    height: 50px; /* Wysokość logo */
+    object-fit: cover; /* Dopasowanie obrazu */
+    position: absolute; /* Pozycjonowanie absolutne */
+    top: 10px; /* Odstęp od góry */
+    left: 10px; /* Odstęp od lewej */
+    border-radius: 5px; /* Zaokrąglenie rogów (opcjonalne) */
+}
+.accordion {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ccc;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.accordion-header:hover {
+    background-color: #45a049;
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #333;
+}
+
+.accordion-content p {
+    margin: 0;
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 800px; /* Maksymalna szerokość filmu */
+    height: 450px; /* Wysokość filmu */
+    border-radius: 10px; /* Opcjonalne zaokrąglenie rogów */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Opcjonalny cień */
+}

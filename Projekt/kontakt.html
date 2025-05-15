@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="walidacja.js" defer></script>
+    <title>Kontakt</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .contact-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-container h1 {
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        .contact-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-container label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-container input,
+        .contact-container textarea,
+        .contact-container button {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact-container textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        .contact-container button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .contact-container button:hover {
+            background-color: #45a049;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+            margin-top: -10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.svg" alt="Logo Strony">
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="temat1.html">Galeria</a></li>
+                <li><a href="temat2.html">Rodzaje Pocisków</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-container">
+            <h1>Formularz Kontaktowy</h1>
+            <form id="contact-form">
+                <label for="name">Imię i nazwisko</label>
+                <input type="text" id="name" name="name" placeholder="Wpisz swoje imię i nazwisko">
+                <div class="error" id="name-error"></div>
+
+                <label for="email">Adres e-mail</label>
+                <input type="email" id="email" name="email" placeholder="Wpisz swój adres e-mail">
+                <div class="error" id="email-error"></div>
+
+                <label for="message">Wiadomość</label>
+                <textarea id="message" name="message" placeholder="Wpisz swoją wiadomość"></textarea>
+                <div class="error" id="message-error"></div>
+
+                <button type="submit">Wyślij</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Strona o Czołgach. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+</body>

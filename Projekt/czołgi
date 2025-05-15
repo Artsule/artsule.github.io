@@ -1,0 +1,18 @@
+/czołgi
+│
+├── index.html          # Strona główna
+├── kontakt.html        # Podstrona kontaktowa
+├── quiz.html           # Podstrona quizu
+├── temat1.html         # Podstrona tematyczna 1
+├── temat2.html         # Podstrona tematyczna 2
+│
+├── css
+│   └── style.css       # Arkusz stylów
+│
+├── js
+│   ├── script.js       # Skrypt JavaScript
+│   └── quiz.js         # Skrypt do quizu
+│
+└── images
+    ├── logo.svg        # Logo w formacie SVG
+    └── galeria         # Folder z obrazami do galerii
